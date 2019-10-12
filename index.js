@@ -20,5 +20,7 @@ function sendPost(link){
 telegram.on("text", (message) => {
     if(message.text.toLowerCase().indexOf('http://vm.tiktok.com') === 0){
         sendPost(message.text)
+    }else{
+      telegram.sendMessage(message.chat.id, 'idk what to do :(');
     }
 });
