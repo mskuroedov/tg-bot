@@ -1,10 +1,10 @@
-var admin = require("firebase-admin");
-var serviceAccount = require("./firebaseServiceAccount.json");
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://tg-postposting.firebaseio.com"
-});
-const db = admin.firestore();
+// var admin = require("firebase-admin");
+// var serviceAccount = require("./firebaseServiceAccount.json");
+// admin.initializeApp({
+  // credential: admin.credential.cert(serviceAccount),
+  // databaseURL: "https://tg-postposting.firebaseio.com"
+// });
+// const db = admin.firestore();
 
 
 var TelegramBot = require('node-telegram-bot-api'),
